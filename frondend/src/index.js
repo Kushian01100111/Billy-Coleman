@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import './normalize.css'
 import App from './App';
 import Women from "./pages/Women"
 import Men from "./pages/Men"
