@@ -1,8 +1,20 @@
 
+#root{
+    display: grid; 
+    grid-template-columns: max-content 1fr; 
+    grid-template-rows: 100vh; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". ."; 
+  }
 
 .header{
-  margin-top: 20px;
-  height: 100vh;
+  max-width: 260px;
+}
+
+.navBar{
+  margin: 20px 0 0 0;
+  width: fit-content;
   padding-left: 15px;
   display: flex;
   flex-direction: column;

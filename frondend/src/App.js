@@ -1,8 +1,10 @@
 import './App.css';
-import { Link } from 'react-router-dom';
+import { Link, Outlet} from 'react-router-dom';
+
 
 function App() {
   return (
+    <>
     <header className="header">
       <div className='navBar'>
         <Link to="/"><h1>Billy Coleman</h1></Link>
@@ -18,6 +20,9 @@ function App() {
         </ul>
       </div>
     </header>
+
+    <Outlet/>
+    </>
   );
 }
 

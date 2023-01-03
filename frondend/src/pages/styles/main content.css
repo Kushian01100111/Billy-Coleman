@@ -1,0 +1,33 @@
+
+#root header+div{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#root header+div a:hover{
+    font-weight: 800;
+    color: #3C5CAF;
+}
+  
+#root header+div a:after{
+    content: "";
+    position: absolute;
+    background-color: #3C5CAF;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+  
+#root header+div a:hover:after{
+      width: 100%;
+}
+
+iframe{
+    height: 90vh;
+    width: 90vh;
+    margin-bottom: 26px;
+}
+
