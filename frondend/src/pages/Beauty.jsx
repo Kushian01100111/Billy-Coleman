@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom"
 
 const Beauty = () => {
   return (
-    <div>
-      
+    <div className="video">
+     <Link to='/beauty/portfolio'><h2>Portfolio</h2></Link>
     </div>
   )
 }
