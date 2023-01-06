@@ -1,4 +1,5 @@
 
+import "./Portfolios.css"
 
 const BPortfolios = () => {
   return (

@@ -1,3 +1,4 @@
+import "./Portfolios.css"
 
 
 const CPortfolios = () => {

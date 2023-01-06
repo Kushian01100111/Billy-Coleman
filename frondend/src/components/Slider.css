@@ -1,0 +1,23 @@
+
+.img img{
+    max-width: 1040px;
+    height: 90vh;
+}
+
+.right{
+    position: absolute;
+    border: solid 5px blue;
+    width: 50%;
+    height: 90vh;
+    cursor: url('https://img.icons8.com/ios/512/advance--v1.png'), auto;
+    z-index: 1;
+}
+
+.left{
+    position: absolute;
+    border: solid 5px blue;
+    width: 50%;
+    height: 90vh;
+    cursor: url('https://img.icons8.com/ios/512/advance--v1.png'), auto;
+    z-index: 1;
+}

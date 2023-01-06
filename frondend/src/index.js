@@ -27,52 +27,42 @@ const router = createBrowserRouter([{
       {
       path:"/women",
       element:<Women/>,
-      children:[
-        {
-          path:"/women/portfolio",
-          element: <WPortfolios/>,
-        },
-      ],
-    },
+      },
+      {
+        path:"/women/portfolio",
+        element: <WPortfolios/>,
+      },
     {
       path:"/men",
       element: <Men/>,
-      children:[
-        {
-          path:"/men/portfolio",
-          element: <MPortfolios/>,
-        }
-      ]
+    },
+    {
+      path:"/men/portfolio",
+      element: <MPortfolios/>,
     },
     {
       path:"/beauty",
       element:<Beauty/>,
-      children:[
-        {
-          path:"/beauty/portfolio",
-          element: <BPortfolios/>
-        }
-      ]
+    },
+    {
+      path:"/beauty/portfolio",
+      element: <BPortfolios/>
     },
     {
       path:"/advertising",
       element:<Advertising/>,
-      children:[
-        {
-          path:"/advertising/portfolio",
-          element: <APortfolios/>
-        }
-      ]
+    },
+    {
+      path:"/advertising/portfolio",
+      element: <APortfolios/>
     },
     {
       path:"/contact",
       element:<Contact/>,
-      children:[
-        {
-          path:"/contact/portfolio",
-          element: <CPortfolios/>
-        }
-      ]
+    },
+    {
+      path:"/contact/portfolio",
+      element: <CPortfolios/>
     }
 ]
 }])

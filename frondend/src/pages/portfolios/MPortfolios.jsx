@@ -1,4 +1,4 @@
-
+import "./Portfolios.css"
 
 const MPortfolios = () => {
   return (
