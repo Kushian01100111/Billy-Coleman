@@ -17,7 +17,7 @@ const WPortfolios = () => {
     {url: 'https://res.cloudinary.com/dpsobnvtv/image/upload/v1673038164/Billy%20Examples/SHOT_04_077_zhbd7r.jpg'},
     {url: 'https://res.cloudinary.com/dpsobnvtv/image/upload/v1673038164/Billy%20Examples/NS_ANNADERIJK_014_bsrj0m.jpg'},
     {url: 'https://res.cloudinary.com/dpsobnvtv/image/upload/v1673038163/Billy%20Examples/210831_LOVE_WANT_NS_15_1725AB_ofgaxl.jpg'},
-  ]
+  ];
 
   return (
     <div>
