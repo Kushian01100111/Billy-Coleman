@@ -1,23 +1,28 @@
 
-.img img{
-    max-width: 1040px;
-    height: 90vh;
+.img{
+    height: 100%;
+    position: relative;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
 }
 
 .right{
     position: absolute;
-    border: solid 5px blue;
     width: 50%;
-    height: 90vh;
-    cursor: url('https://img.icons8.com/ios/512/advance--v1.png'), auto;
+    height: 95vh;
     z-index: 1;
+    right: 0;
+    cursor: url('./../assets/arrows/icons8-right-64.png'), auto;
 }
 
 .left{
     position: absolute;
-    border: solid 5px blue;
     width: 50%;
-    height: 90vh;
-    cursor: url('https://img.icons8.com/ios/512/advance--v1.png'), auto;
+    height: 95vh;
+    cursor: url('./../assets/arrows/icons8-left-64.png'), auto;
     z-index: 1;
+    left: 0;
 }

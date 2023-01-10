@@ -1,4 +1,5 @@
 import "./Portfolios.css"
+import Slider from "../../components/Slider";
 
 
 const APortfolios = () => {
