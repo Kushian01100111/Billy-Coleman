@@ -12,6 +12,7 @@ import MPortfolios from "./pages/portfolios/MPortfolios"
 import CPortfolios from "./pages/portfolios/CPortfolios"
 import BPortfolios from "./pages/portfolios/BPortfolios"
 import APortfolios from "./pages/portfolios/APortfolios"
+import Error from './pages/Error';
 import Contact from "./pages/Contact"
 
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
@@ -19,6 +20,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 const router = createBrowserRouter([{
   path: "/",
   element: <Root/>,
+  errorElement: <Error/>, 
     children:[
       {
         index: true,

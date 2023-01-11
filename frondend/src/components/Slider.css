@@ -2,6 +2,12 @@
 .img{
     height: 100%;
     position: relative;
+    transition: all ease-out 0.5ms;
+}
+
+.img:after{
+    content: "";
+    transition: all ease-out 0.3s;
 }
 
 .slide{
@@ -26,3 +32,4 @@
     z-index: 1;
     left: 0;
 }
+
