@@ -9,7 +9,6 @@ import Advertising from "./pages/Advertising"
 import Root from './Root';
 import WPortfolios from "./pages/portfolios/WPortfolios"
 import MPortfolios from "./pages/portfolios/MPortfolios"
-import CPortfolios from "./pages/portfolios/CPortfolios"
 import BPortfolios from "./pages/portfolios/BPortfolios"
 import APortfolios from "./pages/portfolios/APortfolios"
 import Error from './pages/Error';
@@ -62,10 +61,6 @@ const router = createBrowserRouter([{
       path:"/contact",
       element:<Contact/>,
     },
-    {
-      path:"/contact/portfolio",
-      element: <CPortfolios/>
-    }
 ]
 }])
 

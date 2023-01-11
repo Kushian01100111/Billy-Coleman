@@ -5,12 +5,12 @@
     align-items: center;
 }
 
-#root header+div a:hover{
+#root header+div h2:hover{
     font-weight: 800;
     color: #3C5CAF;
 }
   
-#root header+div a:after{
+#root header+div h2:after{
     content: "";
     position: absolute;
     background-color: #3C5CAF;
@@ -21,7 +21,7 @@
     transition: 0.3s;
 }
   
-#root header+div a:hover:after{
+#root header+div h2:hover:after{
       width: 100%;
 }
 
