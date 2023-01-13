@@ -5,6 +5,8 @@ import PhoneInput from "react-phone-number-input"
 
 const Contact = () => {
   const [value, setValue] = useState()
+  const [name, setName] = useState("");
+  const [lastName, setLastName] = ("");
   return (
   <m.div className="video">
       <main>
