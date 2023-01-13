@@ -1,4 +1,4 @@
-import { Express } from "express";
+import Express  from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import mainRoute from "./routes/mainRoutes";
