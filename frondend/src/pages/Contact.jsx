@@ -83,6 +83,7 @@ const Contact = () => {
               name="" 
               id="message" 
               cols="30" 
+              
               rows="10"
               value={formik.values.message}
               onChange={formik.handleChange}>
