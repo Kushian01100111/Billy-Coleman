@@ -1,9 +1,12 @@
 import { useState } from "react"
 import { motion as m } from "framer-motion"
 import "react-phone-number-input/style.css"
+import "./../styles/Contact.css"
 import PhoneInput from "react-phone-number-input"
 import { useFormik } from "formik"
 import * as Yup from "yup"
+import {PhoneCallback,Email, LocationOn } from "@mui/icons-material"
+import swal from "sweetalert"
 
 const Contact = () => {
   const [value, setValue] = useState()
@@ -23,9 +26,6 @@ const Contact = () => {
       lastName: Yup.string()
       .max(20, "Last name must be 20 charracter or less")
       .required("Last name is required"),
-      phoneNumber: Yup.string()
-      .max(20, "Last name must be 20 charracter or less")
-      .required("Last name is required"),
       email: Yup.string()
       .email("Invalid email address")
       .required("The email is required"),
@@ -39,84 +39,128 @@ const Contact = () => {
       values.phoneNumber = value
       console.log("form submitted");
       console.log(values);
+      swal({
+        title: "Message sent!",
+        text: "Your message has been sent, wait shortly for us to respond to it!",
+        icon: "success",
+      });
     }
   });
 
   return (
-  <m.div className="video">
+  <m.div 
+    className="video"
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    transition={{duration: 0.75, ease:"easeOut"}}>
       <main>
-        <h2>Contact</h2>
+        <h3>Contact</h3>
           <form 
             id="contac" 
             className="contact" 
             onSubmit={formik.handleSubmit}>
-            <label htmlFor="name">First Name</label>
-              <input type="text" 
-              placeholder=""
-              id="name"
-              value={formik.values.name}
-              onChange={formik.handleChange}
-              />
-            <label htmlFor="lastName">Last Name</label>
-              <input type="text" 
-              placeholder=""
-              id="lastName"
-              value={formik.values.lastName}
-              onChange={formik.handleChange}
-              />
-            <label htmlFor="email">Email</label>
-              <input type="email" 
-              placeholder=""
-              id="email"
-              value={formik.values.email}
-              onChange={formik.handleChange}
-              />
-            <label htmlFor="phoneNumber">Phone Number</label>
-              <PhoneInput
-                placeholder="Phone Number"
-                value={value}
-                onChange={setValue}
-                id="phoneNumber"
-              />  
-            <label htmlFor="message">Message</label>
-              <textarea 
-              name="" 
-              id="message" 
-              cols="30" 
-              
-              rows="10"
-              value={formik.values.message}
-              onChange={formik.handleChange}>
-              </textarea>
-            
-          <div>
-          
-            <div>
-              <h3>Contact information</h3>
+            <div className="parent">
+                <div className="div2">
+                  <label htmlFor="name"
+                  className={`${formik.touched.name &&formik.errors.name 
+                  ? "error"
+                  : ""}`}>
+                  {formik.touched.name && formik.errors.name 
+                  ? formik.errors.name
+                  : "First Name"}</label>
+                    <input type="text" 
+                    placeholder=""
+                    id="name"
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    />
+                </div>
+                <div className="div3">
+                  <label htmlFor="lastName"
+                  className={`${formik.touched.lastName &&formik.errors.lastName 
+                  ? "error"
+                  : ""}`}>
+                  {formik.touched.lastName && formik.errors.lastName 
+                  ? formik.errors.lastName
+                  : "Last Name"}</label>
+                    <input type="text" 
+                    placeholder=""
+                    id="lastName"
+                    value={formik.values.lastName}
+                    onChange={formik.handleChange}
+                    />
+                </div>
+                <div className="div4">
+                  <label htmlFor="email"
+                  className={`${formik.touched.email &&formik.errors.email 
+                  ? "error"
+                  : ""}`}>
+                  {formik.touched.email && formik.errors.email 
+                  ? formik.errors.email
+                  : "Email"}</label>
+                    <input type="email" 
+                    placeholder=""
+                    id="email"
+                    value={formik.values.email}
+                    onChange={formik.handleChange}
+                    />
+                </div>
+                <div className="div5">
+                  <label htmlFor="phoneNumber">Phone Number</label>
+                    <PhoneInput
+                      placeholder="Phone Number"
+                      value={value}
+                      onChange={setValue}
+                      id="phoneNumber"
+                    />
+                </div>
+                <div className="div6">
+                <label htmlFor="message"
+                className={
+                `${formik.touched.message && formik.errors.message 
+                ? "error"
+                : ""}`}>
+                {formik.touched.message && formik.errors.message 
+                ? formik.errors.message
+                : "Message"}</label>
+                  <textarea 
+                  name="" 
+                  id="message" 
+                  value={formik.values.message}
+                  onChange={formik.handleChange}>
+                  </textarea>
+                </div>
+              <div className="div7">
+                <div>
+                  <h3>Contact information</h3>
+                </div>
+                <div>
+                  <div>
+                    <PhoneCallback sx={{ fontSize: "2.2rem"}}/>
+                    <span>+1012 3456 789</span>
+                  </div>
+                  <div>
+                    <Email sx={{fontSize: "2.2rem"}}/> 
+                    <span>demo@gmail.com</span>
+                  </div>
+                  <div>
+                    <LocationOn sx={{fontSize: "2.2rem"}}/>
+                    <span>Maimi, Florida</span>
+                  </div>
+                </div>
+              </div>
+              <div className="div8">
+                <input 
+                type="submit" 
+                value="Send message" 
+                form="contac"
+                id="submit"
+                />
+              </div>
             </div>
-            <div>
-              <div>
-                <i></i>
-                <span>+1012 3456 789</span>
-              </div>
-              <div>
-                <i></i>
-                <span>demo@gmail.com</span>
-              </div>
-              <div>
-                <i></i>
-                <span>Maimi, Florida</span>
-              </div>
-            </div>
-          </div>
           </form>
       </main>
-      <div>
-      <input 
-      type="submit" 
-      value="Send message" 
-      form="contac"/>
-      </div>
   </m.div>
   )
 }
