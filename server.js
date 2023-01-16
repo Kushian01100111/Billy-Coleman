@@ -1,7 +1,8 @@
 import Express  from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import mainRoute from "./routes/mainRoutes";
+import mainRoute from "./routes/mainRoute";
+import formRoute from "./routes/fromRoute"
 
 //Envirioment varibles 
 dotenv.config({path:'./config/.env'})
@@ -19,7 +20,8 @@ app.use(cors({
 app.use(express.static("frondend"));
 
 //Setup routes
-app.use("/", mainRoute);
+app.use("*", mainRoute);
+app.use("/api/form", formRoute)
 
 
 app.listen(process.env.PORT, ()=>{
