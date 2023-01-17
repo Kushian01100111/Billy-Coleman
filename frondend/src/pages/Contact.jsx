@@ -1,14 +1,16 @@
 import { useState } from "react"
 import { motion as m } from "framer-motion"
 import "react-phone-number-input/style.css"
-import "./../styles/Contact.css"
 import PhoneInput from "react-phone-number-input"
 import { useFormik } from "formik"
 import * as Yup from "yup"
 import {PhoneCallback,Email, LocationOn } from "@mui/icons-material"
 import swal from "sweetalert"
+import { useOutletContext } from "react-router-dom"
+
 
 const Contact = () => {
+  const {activeNav} = useOutletContext()
   const [value, setValue] = useState()
   const formik =  useFormik({
     initialValues:{
@@ -49,7 +51,7 @@ const Contact = () => {
 
   return (
   <m.div 
-    className="video"
+    className={`video ${activeNav ? "opacacy": ""}`}
     initial={{opacity: 0}}
     animate={{opacity: 1}}
     transition={{duration: 0.75, ease:"easeOut"}}>

@@ -1,8 +1,10 @@
-import "./Portfolios.css"
 import Slider from "../../components/Slider";
 import {motion as m } from "framer-motion"
+import { useOutletContext } from "react-router-dom"
+
 
 const MPortfolios = () => {
+  const {activeNav} = useOutletContext()
   const slides =[
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/GQST__Collections-2_fqhpim.jpg",
       alt:"Men"
@@ -49,6 +51,7 @@ const MPortfolios = () => {
 
   return (
     <m.div 
+    className={`${activeNav ? "opacacy": ""}`}
     initial={{opacity: 0, y:-10}}
     animate={{opacity: 1, y: 0}}
     transition={{duration: 1, ease: "backInOut"}}>

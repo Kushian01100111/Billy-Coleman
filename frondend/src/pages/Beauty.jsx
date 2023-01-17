@@ -1,15 +1,15 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useOutletContext } from "react-router-dom"
 import {motion as m} from "framer-motion"
-import "./styles/main content.css"
 
 const Beauty = () => {
+  const {activeNav} = useOutletContext()
   const navigate = useNavigate()
   const handleClick = () =>{
       navigate('/beauty/portfolio')
   }
   return (
     <m.div 
-    className="video"
+    className={`video ${activeNav ? "opacacy": ""}`}
     initial={{opacity: 0}}
     animate={{opacity: 1}}
     transition={{duration: 0.75, ease:"easeOut"}}>

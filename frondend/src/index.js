@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './styles/Main content.css'
+import './styles/Portfolios.css'
+import './styles/Contact.css'
 import App from './App';
 import Women from "./pages/Women"
 import Men from "./pages/Men"

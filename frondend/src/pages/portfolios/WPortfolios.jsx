@@ -1,8 +1,10 @@
 import Slider from "../../components/Slider"
-import "./Portfolios.css"
 import {motion as m } from "framer-motion"
+import { useOutletContext } from "react-router-dom"
+
 
 const WPortfolios = () => {
+  const {activeNav} = useOutletContext()
   const slides= [
     {url: 'https://res.cloudinary.com/dpsobnvtv/image/upload/v1673038173/Billy%20Examples/210831_LOVE_WANT_NS_07_0898_hmp86b.jpg',
     alt: ""},
@@ -36,6 +38,7 @@ const WPortfolios = () => {
 
   return (
     <m.div 
+    className={`${activeNav ? "opacacy": ""}`}
     initial={{opacity: 0, y:-10}}
     animate={{opacity: 1, y: 0}}
     transition={{duration: 1, ease: "backInOut"}}>
