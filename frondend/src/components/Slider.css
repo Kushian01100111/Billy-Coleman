@@ -33,3 +33,17 @@
     left: 0;
 }
 
+/* Phone */
+
+@media (max-width: 1024px) {
+    .img{
+        width: 100%;
+        height: auto;
+    }
+    .contentImg{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -134,10 +134,10 @@ const Contact = () => {
                   </textarea>
                 </div>
               <div className="div7">
-                <div>
+                <div className="div9">
                   <h3>Contact information</h3>
                 </div>
-                <div>
+                <div className="div10">
                   <div>
                     <PhoneCallback sx={{ fontSize: "2.2rem"}}/>
                     <span>+1012 3456 789</span>

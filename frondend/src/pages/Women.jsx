@@ -1,4 +1,4 @@
-import { useNavigate, useOutletContext } from "react-router-dom"
+import { useNavigate, useOutletContext} from "react-router-dom"
 import {motion as m} from "framer-motion"
 
 const Women = () => {

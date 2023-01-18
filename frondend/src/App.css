@@ -107,7 +107,7 @@ h2{
       position: absolute;
       left: 0;
       height: 100vh;
-      width: 10vw;
+      width: 15vw;
       z-index: 1;
     }
 
@@ -124,6 +124,20 @@ h2{
       opacity: 0.5 !important;
     }
 }
+
+/* Phone */
+
+@media  (max-width: 500px){
+  html{
+    height: auto;
+  }
+  .drag{
+    width: 7vw;
+    height: 100%;
+  }
+
+}
+
 
 .navBarActive{
   transform: translateX(0%);

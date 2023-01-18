@@ -1,9 +1,12 @@
 import Slider from "../../components/Slider";
 import {motion as m } from "framer-motion"
 import { useOutletContext } from "react-router-dom"
+import { useState, useEffect } from "react"
+
 
 
 const MPortfolios = () => {
+  const [width, setWidth] = useState(window.innerWidth);
   const {activeNav} = useOutletContext()
   const slides =[
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/GQST__Collections-2_fqhpim.jpg",
@@ -48,9 +51,31 @@ const MPortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448590/Billy%20Examples/Men/Screen_Shot_2022-11-21_at_1.28.54_PM_yezabs.png",
       alt:"Men"
     },];
+    function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
 
   return (
-    <m.div 
+    <>
+    { width <= 1024?
+      <m.div 
+    className={`${activeNav ? "opacacy": ""}`}
+    initial={{opacity: 0, y:-10}}
+    animate={{opacity: 1, y: 0}}
+    transition={{duration: 1, ease: "backInOut"}}>
+      <div className="contentImg">
+        {slides.map((img,i) => (
+          <img key={i} src={img.url} alt={img.alt} className="img"/>
+        ))}
+      </div>
+    </m.div>
+    :<m.div 
     className={`${activeNav ? "opacacy": ""}`}
     initial={{opacity: 0, y:-10}}
     animate={{opacity: 1, y: 0}}
@@ -58,7 +83,9 @@ const MPortfolios = () => {
         <div className="container">
         <Slider slides={slides}/>
         </div>
-    </m.div>
+    </m.div> }
+    
+    </>
   )
 }
 
