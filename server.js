@@ -1,14 +1,21 @@
 import Express  from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import mainRoute from "./routes/mainRoute";
-import formRoute from "./routes/fromRoute"
+import path from "path";
+import formController from "./formController/formControl.js"
+import formRoute from "./route/formRoute.js"
+import { fileURLToPath } from "url";
+
+
+// __Firname __dirname 
+const __filename =  fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename)
 
 //Envirioment varibles 
 dotenv.config({path:'./config/.env'})
 
 //Express setup
-const app =  Express();
+const app = Express();
 
 //Cors setup
 app.use(cors({
@@ -17,11 +24,15 @@ app.use(cors({
 }));
 
 // Static folder || React files
-app.use(express.static("frondend"));
+app.use(Express.static("frontend/build"));
 
 //Setup routes
-app.use("*", mainRoute);
-app.use("/api/form", formRoute)
+app.use('/api/form', formRoute)
+
+app.use('/', (_, res) => {
+  res.sendFile(path.join(__dirname, 'frontend/build/index.html'));
+});
+
 
 
 app.listen(process.env.PORT, ()=>{

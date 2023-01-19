@@ -50,3 +50,22 @@ a{
   transition: 0.3s;
 }
 
+/* Media Quaries */
+
+/* tablet */
+
+/* 1024 / 16px = 64em */
+@media (max-width: 64em) {
+  html{
+    font-size: 60%;
+  }
+}
+
+/* Phone */
+
+/* 500 / 16 =  31,25em */
+@media (max-width: 31.25em) {
+  html{
+    font-size: 55%;
+  }
+}

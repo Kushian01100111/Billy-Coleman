@@ -47,6 +47,21 @@
     width: 100%;
   }
 
+  .currentPage{
+    font-weight: 800;
+    color: #3C5CAF;
+  }
+
+  .currentPage:after{
+    content: "";
+    position: absolute;
+    background-color: #3C5CAF;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+  }
 
 h1{
   font-weight: 400;
@@ -86,6 +101,16 @@ h2{
       display: flex;
       flex-direction: column;
     }
+
+    .header{
+      max-width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background-color: #fff;
+      padding-bottom: 10px;
+    }
+
     .navBar{
       position: absolute;
       left: 0;
@@ -102,11 +127,12 @@ h2{
       display: block;
       margin-top: 20px;
       margin-left: 15px;
+      width: fit-content;
     }
     .drag{
       position: absolute;
       left: 0;
-      height: 100vh;
+      height: 100%;
       width: 15vw;
       z-index: 1;
     }
@@ -133,7 +159,7 @@ h2{
   }
   .drag{
     width: 7vw;
-    height: 100%;
+    height: 100vh;
   }
 
 }

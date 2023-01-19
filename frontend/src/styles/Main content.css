@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+#root header+div h2{
+    margin-top: 10px;
+}
+
 #root header+div h2:hover{
     font-weight: 800;
     color: #3C5CAF;
