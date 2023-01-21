@@ -37,17 +37,31 @@ const Contact = () => {
     }),
 
 
-    onSubmit: (values)=>{
+    onSubmit: async (values)=>{
       values.phoneNumber = value
-      console.log("form submitted");
-      console.log(values);
-      swal({
-        title: "Message sent!",
-        text: "Your message has been sent, wait shortly for us to respond to it!",
-        icon: "success",
-      });
+      const response =  await fetch("/api/form",{
+          method: "POST",
+          headers: {
+          'Content-type': 'application/json',
+        },
+          body: JSON.stringify(values),
+          credentials: "include"
+      })
+      const json = await response.json();
+
+      if(json){
+        console.log("form submitted");
+        swal({
+          title: "Message sent!",
+          text: "Your message has been sent, wait shortly for us to respond to it!",
+          icon: "success",
+      })
+      }else{
+        console.log("Error")
+      }
+      }
     }
-  });
+  );
 
   return (
   <m.div 
