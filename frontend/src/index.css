@@ -9,7 +9,7 @@
 }
 
 html{
-  font-size: 62.5%;
+  font-size: 62.5% ;
   height: 100vh;
 }
 
@@ -29,11 +29,11 @@ code {
 
 
 h1,h2,h3,h4,h5,h6{
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 h2{
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
@@ -46,7 +46,7 @@ a{
   display: inline-block;
   position: relative;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   transition: 0.3s;
 }
 
@@ -63,9 +63,9 @@ a{
 
 /* Phone */
 
-/* 500 / 16 =  31,25em */
+/* 500 / 16 =  31,25em
 @media (max-width: 31.25em) {
   html{
     font-size: 55%;
   }
-}
+} */
