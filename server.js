@@ -2,8 +2,7 @@ import Express  from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import path from "path";
-// import formController from "./formController/formControl.js"
-import formRoute from "./route/formRoute.js"
+import formController from "./formController/formControl.js"
 import { fileURLToPath } from "url";
 
 
@@ -31,7 +30,7 @@ app.use(Express.json());
 app.use(Express.static("frontend/build"));
 
 //Setup routes
-app.use('/api/form', formRoute)
+app.use('/api/form', formController)
 
 app.use('*', (_, res) => {
   res.sendFile(path.join(__dirname, 'frontend/build/index.html'));

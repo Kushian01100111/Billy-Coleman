@@ -154,15 +154,15 @@ const Contact = () => {
                 <div className="div10">
                   <div>
                     <PhoneCallback sx={{ fontSize: "2.2rem"}}/>
-                    <span>+1012 3456 789</span>
+                    <span> +1012 3456 789</span>
                   </div>
                   <div>
                     <Email sx={{fontSize: "2.2rem"}}/> 
-                    <span>demo@gmail.com</span>
+                    <span> info@billycoleman.com</span>
                   </div>
                   <div>
                     <LocationOn sx={{fontSize: "2.2rem"}}/>
-                    <span>Maimi, Florida</span>
+                    <span> Maimi, Florida</span>
                   </div>
                 </div>
               </div>
