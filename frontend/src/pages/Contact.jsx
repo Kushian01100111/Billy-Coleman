@@ -1,24 +1,26 @@
+import "react-phone-number-input/style.css"
 import { useState } from "react"
 import { motion as m } from "framer-motion"
-import "react-phone-number-input/style.css"
-import PhoneInput from "react-phone-number-input"
 import { useFormik } from "formik"
-import * as Yup from "yup"
 import {PhoneCallback,Email, LocationOn } from "@mui/icons-material"
-import swal from "sweetalert"
 import { useOutletContext } from "react-router-dom"
+import PhoneInput from "react-phone-number-input"
+import swal from "sweetalert"
+import * as Yup from "yup"
+
 
 
 const Contact = () => {
-  const {activeNav} = useOutletContext()
-  const [value, setValue] = useState()
+  const {activeNav} = useOutletContext();
+  const [value, setValue] = useState();
+  const [ waitingForm, setWaitingForm] = useState(false);
   const formik =  useFormik({
     initialValues:{
       name: "",
       lastName: "",
       phoneNumber: "",
       email:"",
-      message: ""
+      mensaje: ""
     },
 
     validationSchema: Yup.object({
@@ -31,7 +33,7 @@ const Contact = () => {
       email: Yup.string()
       .email("Invalid email address")
       .required("The email is required"),
-      message: Yup.string()
+      mensaje: Yup.string()
       .min(20, "Last name must be 5 charracter or more")
       .required("The message is required")
     }),
@@ -39,15 +41,16 @@ const Contact = () => {
 
     onSubmit: async (values)=>{
       values.phoneNumber = value
-      const response =  await fetch("/api/form",{
-          method: "POST",
-          headers: {
-          'Content-type': 'application/json',
-        },
-          body: JSON.stringify(values),
-          credentials: "include"
-      })
-      const json = await response.json();
+      setWaitingForm(!waitingForm)
+        const response =  await fetch("/api/form",{
+            method: "POST",
+            headers: {
+            'Content-type': 'application/json',
+          },
+            body: JSON.stringify(values),
+            credentials: "include"
+        })
+        const json = await response.json();
 
       if(json){
         console.log("form submitted");
@@ -56,6 +59,7 @@ const Contact = () => {
           text: "Your message has been sent, wait shortly for us to respond to it!",
           icon: "success",
       })
+        setWaitingForm(!waitingForm)
       }else{
         console.log("Error")
       }
@@ -132,18 +136,18 @@ const Contact = () => {
                     />
                 </div>
                 <div className="div6">
-                <label htmlFor="message"
+                <label htmlFor="mensaje"
                 className={
-                `${formik.touched.message && formik.errors.message 
+                `${formik.touched.mensaje && formik.errors.mensaje
                 ? "error"
                 : ""}`}>
-                {formik.touched.message && formik.errors.message 
-                ? formik.errors.message
+                {formik.touched.mensaje && formik.errors.mensaje 
+                ? formik.errors.mensaje
                 : "Message"}</label>
                   <textarea 
                   name="" 
-                  id="message" 
-                  value={formik.values.message}
+                  id="mensaje" 
+                  value={formik.values.mensaje}
                   onChange={formik.handleChange}>
                   </textarea>
                 </div>
@@ -166,14 +170,21 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="div8">
+              {waitingForm ? (
+                <div className="div8">
+                  <div className="loader-container">
+                    <div className="spinner"></div>
+                  </div>
+                </div>
+              ) : (<m.div className="div8" initial={{opacity:1}} animate={waitingForm ? {opacity: 0}: ""}>
                 <input 
                 type="submit" 
                 value="Send message" 
                 form="contac"
                 id="submit"
                 />
-              </div>
+              </m.div>) }
+              
             </div>
           </form>
       </main>

@@ -1,3 +1,6 @@
+
+
+
 main{
     display: flex;
     flex-direction: column;
@@ -28,6 +31,32 @@ main>h3{
     justify-items: center;
     align-items: center;
     justify-content: center;
+}
+
+.loader-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 8px solid;
+    border-color: #000 #f3f3f3 #000 #f3f3f3;
+    border-radius: 100%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .div7{
     grid-area: 1 / 3 / 3 / 5;  
@@ -62,7 +91,7 @@ span{
     font-size: 1.8rem;
 }
 
-#message{
+#mensaje{
     width: 70vw;
     height: 160px;
     resize: none;
@@ -75,7 +104,7 @@ span{
     font-size: 1.8rem;
 }
 
-#message:focus{
+#mensaje:focus{
     border-bottom: #000 solid 2px;
     border-left:#000 solid 2px ;
     border-right: #000 solid 2px;
