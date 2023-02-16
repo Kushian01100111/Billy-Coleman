@@ -22,12 +22,11 @@ const formControl = async (req,res)=>{
       const accessToken = myOAuth2Client.getAccessToken()
   
       const transporter = nodemailer.createTransport({
-        // service: 'gmail',
         host: "smtp.gmail.com",
         port: 465,
         secure: true,
         auth: {
-          type: "OAuth2", //not capitalized in docs, should it be?
+          type: "OAuth2",
           user: "emialdepagina@gmail.com",
           clientId: process.env.CLIENT_ID,
           clientSecret: process.env.CLIENT_SECRET,
