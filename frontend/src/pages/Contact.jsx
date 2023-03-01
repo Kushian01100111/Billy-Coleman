@@ -13,7 +13,7 @@ import * as Yup from "yup"
 const Contact = () => {
   const {activeNav} = useOutletContext();
   const [value, setValue] = useState();
-  const [ waitingForm, setWaitingForm] = useState(false);
+  const [ waitingForm, setWaitingForm] = useState(true);
   const formik =  useFormik({
     initialValues:{
       name: "",
@@ -54,12 +54,12 @@ const Contact = () => {
 
       if(json){
         console.log("form submitted");
-        setWaitingForm(!waitingForm)
         swal({
           title: "Message sent!",
           text: "Your message has been sent, wait shortly for us to respond to it!",
           icon: "success",
       })
+      setWaitingForm(!waitingForm)
       }else{
         console.log("Error")
       }
@@ -73,8 +73,8 @@ const Contact = () => {
     initial={{opacity: 0}}
     animate={{opacity: 1}}
     transition={{duration: 0.75, ease:"easeOut"}}>
-      <main>
-        <h3>Contact</h3>
+      <main className="main">
+        <h3 className="title">Contact</h3>
           <form 
             id="contac" 
             className="contact" 
@@ -170,20 +170,20 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              {waitingForm ? (
-                <div className="div8">
-                  <div className="loader-container">
-                    <div className="spinner"></div>
-                  </div>
-                </div>
-              ) : (<m.div className="div8" initial={{opacity:1}} animate={waitingForm ? {opacity: 0}: ""}>
+              {waitingForm ? 
+              (<m.div className="div8" initial={{opacity:1}} animate={waitingForm ? "": {opacity: 0}}>
                 <input 
                 type="submit" 
                 value="Send message" 
                 form="contac"
                 id="submit"
                 />
-              </m.div>) }
+              </m.div>
+              ) : (<div className="div8">
+                  <div className="loader-container">
+                    <div className="spinner"></div>
+                  </div>
+                </div>) }
               
             </div>
           </form>

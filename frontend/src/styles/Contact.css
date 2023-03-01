@@ -1,14 +1,9 @@
 
 
-
-main{
+.main{
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
-}
-
-main>h3{
-    margin-bottom: 80px;
 }
 
 .parent {
@@ -197,7 +192,7 @@ span{
             align-items: center;
         }
 
-    main>h3{
+    .main>h3{
         display: none;
     }
 
@@ -213,4 +208,12 @@ span{
     #message{
         width: 90vw;
     }
+}
+
+.title{
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
