@@ -31,7 +31,7 @@
 
 .iframeContainer{
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 iframe{
@@ -39,7 +39,7 @@ iframe{
     height: 90vh;
     width: 90vh;
     margin-bottom: 26px;
-    z-index: -1;
+    z-index: -2;
 }
 
 
