@@ -13,7 +13,7 @@ import * as Yup from "yup"
 const Contact = () => {
   const {activeNav} = useOutletContext();
   const [value, setValue] = useState();
-  const [ waitingForm, setWaitingForm] = useState(true);
+  const [ waitingForm, setWaitingForm] = useState(false);
   const formik =  useFormik({
     initialValues:{
       name: "",
@@ -39,9 +39,9 @@ const Contact = () => {
     }),
 
 
-    onSubmit: async (values)=>{
+    onSubmit: async (values,resetForm)=>{
       values.phoneNumber = value
-      setWaitingForm(!waitingForm)
+      setWaitingForm(true)
         const response =  await fetch("/api/form",{
             method: "POST",
             headers: {
@@ -59,7 +59,8 @@ const Contact = () => {
           text: "Your message has been sent, wait shortly for us to respond to it!",
           icon: "success",
       })
-      setWaitingForm(!waitingForm)
+      setWaitingForm(false)
+      resetForm()
       }else{
         console.log("Error")
       }
@@ -170,8 +171,12 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              {waitingForm ? 
-              (<m.div className="div8" initial={{opacity:1}} animate={waitingForm ? "": {opacity: 0}}>
+              {waitingForm ? (<div className="div8" key={waitingForm}>
+                  <div className="loader-container">
+                    <div className="spinner"></div>
+                  </div>
+                </div>)
+               : (<m.div key={waitingForm} className="div8" initial={{opacity:1}} animate={waitingForm ? {opacity: 0}:""}>
                 <input 
                 type="submit" 
                 value="Send message" 
@@ -179,11 +184,7 @@ const Contact = () => {
                 id="submit"
                 />
               </m.div>
-              ) : (<div className="div8">
-                  <div className="loader-container">
-                    <div className="spinner"></div>
-                  </div>
-                </div>) }
+              ) }
               
             </div>
           </form>

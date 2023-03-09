@@ -26,9 +26,6 @@ const Slider = ({slides}) => {
         setGoRight(true)
     };
 
-    console.log(goLeft, goRight)
-
-
   return (
       <div className="img" >
       <div className="left" onClick={()=> goToPrevious()}></div>
