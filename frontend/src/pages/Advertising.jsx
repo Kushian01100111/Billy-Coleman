@@ -37,7 +37,7 @@ const Advertising = () => {
      onMouseOver={handleMouseOver}
      onMouseOut={handleMouseOver}>
       <iframe 
-            src="https://player.cloudinary.com/embed/?public_id=https%3A%2F%2Fres.cloudinary.com%2Fdpsobnvtv%2Fvideo%2Fupload%2Fv1678315924%2FAdvertising%2F21_imagen_agregada_ghhd9n.mp4&cloud_name=21_imagen_agregada_ghhd9n&player[controls]=false&player[muted]=true&player[hideContextMenu]=true&player[autoplay]=true&player[loop]=true"
+            src="https://player.cloudinary.com/embed/?public_id=https%3A%2F%2Fres.cloudinary.com%2Fdpsobnvtv%2Fvideo%2Fupload%2Fv1678368427%2FAdvertising%2FImagenes_Corregidas_xmjaln.mp4&cloud_name=Imagenes_Corregidas_xmjaln&player[controls]=false&player[muted]=true&player[hideContextMenu]=true&player[autoplay]=true&player[loop]=true"
             allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
             allowfullscreen
             frameborder="0"

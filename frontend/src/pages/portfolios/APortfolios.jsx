@@ -43,7 +43,7 @@ const APortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678316567/Advertising/Imagenes/11b_spftcz.jpg",
       alt:"Advertising"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678316571/Advertising/Imagenes/11C_nybe3g.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678404986/Advertising/Imagenes/11c_f3ydw5.jpg",
       alt:"Advertising"
     },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678316567/Advertising/Imagenes/11d_ix5ttj.jpg",
@@ -115,7 +115,7 @@ const APortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678316591/Advertising/Imagenes/29_nnhath.jpg",
       alt:"Advertising"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678316591/Advertising/Imagenes/30_s4nww7.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678404993/Advertising/Imagenes/33_poegtv.jpg",
       alt:"Advertising"
     }];
     function handleWindowSizeChange() {
