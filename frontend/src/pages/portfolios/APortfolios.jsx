@@ -61,9 +61,6 @@ const APortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678316571/Advertising/Imagenes/12B_sfyvv7.jpg",
       alt:"Advertising"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678316577/Advertising/Imagenes/12c2_klomql.jpg",
-      alt:"Advertising"
-    },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678316590/Advertising/Imagenes/12D_vbo3rl.png",
       alt:"Advertising"
     },

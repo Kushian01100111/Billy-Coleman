@@ -30,7 +30,7 @@ const Root = () => {
           <li><Link to='/advertising' onClick={changeNav} className={`${location.pathname.split("/")[1] === "advertising"? "currentPage": ""}`}>Advertising</Link></li>
         </ul>
         <ul>
-          <li><a href="https://www.instagram.com/billycoleman_photographer/" target="_blank" rel="noopener noreferrer" onClick={changeNav}>Instagram</a></li>
+          <li><a href="https://www.instagram.com/billy_coleman_photographer/" target="_blank" rel="noopener noreferrer" onClick={changeNav}>Instagram</a></li>
           <li><Link to='/contact' onClick={changeNav} className={`${location.pathname.split("/")[1] === "contact"? "currentPage": ""}`}>Contact</Link></li>
         </ul>
       </div>
