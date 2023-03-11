@@ -9,103 +9,76 @@ const MPortfolios = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const {activeNav} = useOutletContext()
   const slides =[
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319280/Men/Imagenes/1_tlkto0.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678568212/Men/Imagenes/1_4_x9jxwj.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319283/Men/Imagenes/1A_piey33.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678568207/Men/Imagenes/2_y5xxrv.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319280/Men/Imagenes/2_widm3v.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567569/Men/Imagenes/3_l33xnr.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319285/Men/Imagenes/3_ask9wr.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567548/Men/Imagenes/4_hwbu1q.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319283/Men/Imagenes/4C_wzczfx.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567549/Men/Imagenes/5_yfxxoo.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319299/Men/Imagenes/5_edd83u.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567550/Men/Imagenes/6_vsuqk7.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319294/Men/Imagenes/6_amq0ki.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1678567551/Men/Imagenes/7_dcyfwe.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319291/Men/Imagenes/6A_vgz7vi.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567550/Men/Imagenes/8_trrkjo.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319297/Men/Imagenes/8_ooj9kc.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567554/Men/Imagenes/9_v047sz.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319294/Men/Imagenes/9_al9jej.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678568203/Men/Imagenes/10_ig9kom.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319297/Men/Imagenes/10_sjfwnq.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567553/Men/Imagenes/11_hlzelr.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319304/Men/Imagenes/10a_b5tln4.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567561/Men/Imagenes/12_x6fblr.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319302/Men/Imagenes/10B_up0lvr.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567553/Men/Imagenes/13_unuxuf.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319303/Men/Imagenes/11_ol01ns.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567567/Men/Imagenes/14_w2ifnn.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319306/Men/Imagenes/11A_iyq5vg.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567559/Men/Imagenes/15_o4wcqi.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319309/Men/Imagenes/12_rqjn9l.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678568204/Men/Imagenes/16_x4y0vs.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319310/Men/Imagenes/13_rue8bn.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567556/Men/Imagenes/17_vwstw2.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319311/Men/Imagenes/14_yrxvjr.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567559/Men/Imagenes/18_th8c09.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319260/Men/Imagenes/15_qmj3yo.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567562/Men/Imagenes/19_rux7tt.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319253/Men/Imagenes/16_jhpyrb.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567566/Men/Imagenes/20_bnr1kq.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319250/Men/Imagenes/18_qtznwv.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567566/Men/Imagenes/21_ju9qgo.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319270/Men/Imagenes/18A_hbll22.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567566/Men/Imagenes/22_tbr52p.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319255/Men/Imagenes/19_meuhqm.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567564/Men/Imagenes/23_xdqgqa.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319254/Men/Imagenes/20_je4r2l.png",
-      alt:"Men"
-    },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319262/Men/Imagenes/20A_minuac.png",
-      alt:"Men"
-    },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319262/Men/Imagenes/21_qhczy3.png",
-      alt:"Men"
-    },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319268/Men/Imagenes/23_sre9qf.png",
-      alt:"Men"
-    },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319263/Men/Imagenes/24_iojsbr.png",
-      alt:"Men"
-    },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319272/Men/Imagenes/25_z7sl9p.png",
-      alt:"Men"
-    },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319268/Men/Imagenes/26_ztdqsc.png",
-      alt:"Men"
-    },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319273/Men/Imagenes/27_psbuuq.png",
-      alt:"Men"
-    },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319271/Men/Imagenes/32_onkpky.png",
-      alt:"Men"
-    },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678319280/Men/Imagenes/33_jsgrf8.png",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567565/Men/Imagenes/24_hsxyng.jpg",
       alt:"Men"
     }];
     function handleWindowSizeChange() {
