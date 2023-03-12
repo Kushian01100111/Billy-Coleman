@@ -80,6 +80,15 @@ const MPortfolios = () => {
     },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567565/Men/Imagenes/24_hsxyng.jpg",
       alt:"Men"
+    },
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678580119/Men/Imagenes/25_hhhdqz.jpg",
+      alt:"Men"
+    },
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678580120/Men/Imagenes/26_fv8iz1.jpg",
+      alt:"Men"
+    },
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678580128/Men/Imagenes/27_ipwzcr.jpg",
+      alt:"Men"
     }];
     function handleWindowSizeChange() {
       setWidth(window.innerWidth);
