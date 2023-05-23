@@ -21,13 +21,13 @@ const MPortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567548/Men/Imagenes/4_hwbu1q.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567549/Men/Imagenes/5_yfxxoo.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567549/Men/Imagenes/5_faxmn7.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567550/Men/Imagenes/6_vsuqk7.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1684798452/Men/Imagenes/6_hztthe.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1678567551/Men/Imagenes/7_dcyfwe.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567551/Men/Imagenes/7_dcyfwe.jpg",
       alt:"Men"
     },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567550/Men/Imagenes/8_trrkjo.jpg",
@@ -57,10 +57,10 @@ const MPortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678568204/Men/Imagenes/16_x4y0vs.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567556/Men/Imagenes/17_vwstw2.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1684798524/Men/Imagenes/17_c5fnka.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567559/Men/Imagenes/18_th8c09.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1684798571/Men/Imagenes/18_oblq01.jpg",
       alt:"Men"
     },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567562/Men/Imagenes/19_rux7tt.jpg",
@@ -69,7 +69,7 @@ const MPortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567566/Men/Imagenes/20_bnr1kq.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567566/Men/Imagenes/21_ju9qgo.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1684798628/Men/Imagenes/21_fpytiu.jpg",
       alt:"Men"
     },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567566/Men/Imagenes/22_tbr52p.jpg",
