@@ -21,10 +21,10 @@ const MPortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567548/Men/Imagenes/4_hwbu1q.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567549/Men/Imagenes/5_faxmn7.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1685585174/Men/Imagenes/sample_2_xjyuvz.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1684798452/Men/Imagenes/6_hztthe.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1687734949/Men/Imagenes/Test_page_6_txueyl.jpg",
       alt:"Men"
     },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567551/Men/Imagenes/7_dcyfwe.jpg",
