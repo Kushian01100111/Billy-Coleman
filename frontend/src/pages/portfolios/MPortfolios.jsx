@@ -15,6 +15,9 @@ const MPortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678568207/Men/Imagenes/2_y5xxrv.jpg",
       alt:"Men"
     },
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1687906076/Men/Imagenes/2b_u89oco.jpg",
+      alt:"Men"
+    },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567569/Men/Imagenes/3_l33xnr.jpg",
       alt:"Men"
     },
@@ -57,10 +60,10 @@ const MPortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678568204/Men/Imagenes/16_x4y0vs.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1684798524/Men/Imagenes/17_c5fnka.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1687906105/Men/Imagenes/17_cwp58m.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1684798571/Men/Imagenes/18_oblq01.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1687906136/Men/Imagenes/18_d1mhaz.jpg",
       alt:"Men"
     },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567562/Men/Imagenes/19_rux7tt.jpg",
@@ -69,7 +72,7 @@ const MPortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567566/Men/Imagenes/20_bnr1kq.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1684798628/Men/Imagenes/21_fpytiu.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1687906166/Men/Imagenes/21_luja0l.jpg",
       alt:"Men"
     },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1678567566/Men/Imagenes/22_tbr52p.jpg",
