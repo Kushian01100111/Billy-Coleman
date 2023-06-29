@@ -12,10 +12,11 @@ const BPortfolios = () => {
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/GQST__Collections-2_fqhpim.jpg",
       alt:"Men"
     },
+
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/HERO_19_Nagi-Taryn-2_ezgbbx.jpg",
       alt:"Men"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/080-101_ZOO_63_SHOOTS_NAGI_SAKAI_WERNER_MASA-3ba_tt3i9q.jpg",
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/080-101_ZOO_63_SHOOTS_NAGI_SAKAI_WERNER_MASA-3ba_tt3i9q.jp g",
       alt:"Men"
     },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/HERO_19_Nagi-Taryn-2a_wpdnua.jpg",
