@@ -8,7 +8,7 @@ function App() {
     animate={{opacity: 1}}
     transition={{duration: 0.75, ease:"easeOut"}}>
       <iframe
-      src="https://player.cloudinary.com/embed/?public_id=3075397806_t3w9ik&cloud_name=dpsobnvtv&player[fluid]=true&player[controls]=false&player[muted]=true&player[skin]=light&player[autoplay]=true&player[loop]=true"
+      src="https://player.cloudinary.com/embed/?public_id=https%3A%2F%2Fres.cloudinary.com%2Fdpsobnvtv%2Fvideo%2Fupload%2Fv1688165451%2FPagina%2520inicial%2520Billy%2FMas_rapido_lt61vg.mp4&cloud_name=Mas_rapido_lt61vg&player[controls]=false&player[muted]=true&player[autoplay]=true&player[loop]=true"
       title="ShowCase"
       allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
       allowfullscreen
