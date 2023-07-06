@@ -37,7 +37,7 @@ const Beauty = () => {
      onMouseOver={handleMouseOver}
      onMouseOut={handleMouseOver}>
       <iframe 
-            src="https://player.cloudinary.com/embed/?public_id=3075397806_t3w9ik&cloud_name=dpsobnvtv&player[fluid]=true&player[controls]=false&player[muted]=true&player[skin]=light&player[autoplay]=true&player[loop]=true"
+            src="https://player.cloudinary.com/embed/?public_id=https%3A%2F%2Fres.cloudinary.com%2Fdpsobnvtv%2Fvideo%2Fupload%2Fv1688501056%2FPagina%2520inicial%2520Billy%2FSin_t%25C3%25ADtulo_zcwq4c.mp4&cloud_name=Sin_t%C3%ADtulo_zcwq4c&player[controls]=false&player[muted]=true&player[autoplay]=true&player[loop]=true"
             allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
             allowfullscreen
             frameborder="0"

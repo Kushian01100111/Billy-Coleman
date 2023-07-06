@@ -159,7 +159,7 @@ const Contact = () => {
                 <div className="div10">
                   <div>
                     <PhoneCallback sx={{ fontSize: "2.2rem"}}/>
-                    <span> +1012 3456 789</span>
+                    <span>+ 1 786 286 4006</span>
                   </div>
                   <div>
                     <Email sx={{fontSize: "2.2rem"}}/> 
