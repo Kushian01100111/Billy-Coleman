@@ -12,7 +12,7 @@ const formControl = async (req,res)=>{
     const myOAuth2Client = new OAuth2(
         process.env.CLIENT_ID,
         process.env.CLIENT_SECRET,
-        "https://developer.google.com/oauthplayground"
+        "https://developers.google.com/oauthplayground"
       );
   
       myOAuth2Client.setCredentials({
@@ -34,7 +34,7 @@ const formControl = async (req,res)=>{
           accessToken: (await accessToken).token,
         },
         tls: {
-          rejectUnauthorized: false,
+          rejectUnauthorized: true,
         },
       });
   

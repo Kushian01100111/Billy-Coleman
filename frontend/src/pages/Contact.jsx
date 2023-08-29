@@ -53,14 +53,14 @@ const Contact = () => {
         const json = await response.json();
 
       if(json){
+        setWaitingForm(false)
+        resetForm()
         console.log("form submitted");
         swal({
           title: "Message sent!",
           text: "Your message has been sent, wait shortly for us to respond to it!",
           icon: "success",
       })
-      setWaitingForm(false)
-      resetForm()
       }else{
         console.log("Error")
       }
