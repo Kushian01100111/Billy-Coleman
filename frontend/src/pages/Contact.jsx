@@ -39,7 +39,7 @@ const Contact = () => {
     }),
 
 
-    onSubmit: async (values,resetForm)=>{
+    onSubmit: async (values,{resetForm})=>{
       values.phoneNumber = value
       setWaitingForm(true)
         const response =  await fetch("/api/form",{
@@ -54,7 +54,7 @@ const Contact = () => {
 
       if(json){
         setWaitingForm(false)
-        resetForm()
+        resetForm({values: ""})
         console.log("form submitted");
         swal({
           title: "Message sent!",

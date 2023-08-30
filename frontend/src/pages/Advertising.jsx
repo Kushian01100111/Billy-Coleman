@@ -25,6 +25,9 @@ const Advertising = () => {
     }
 },);
 
+useEffect(() => {
+  window.scrollTo(0, 0);
+  }, []);
 
   return (
     <m.div 

@@ -26,6 +26,10 @@ const Women = () => {
 },);
 
 
+useEffect(() => {
+  window.scrollTo(0, 0);
+  }, []);
+
   return (
     <m.div 
     className={`video ${activeNav ? "opacacy": ""}`}

@@ -125,6 +125,10 @@ const APortfolios = () => {
       }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    }, []);
+
   return (
     <>
     { width <= 1024?
