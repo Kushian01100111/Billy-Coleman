@@ -40,7 +40,7 @@ const formControl = async (req,res)=>{
   
       const message = {
         from: "emaildepagina@gmail.com",
-        to: "comaspedro6@gmail.com",
+        to: "billy@billycoleman.com ",
         subject: `Sent from: ${name} ${lastName}`,
         text: `Mensaje Enviado por ${name} ${lastName} atraves de billycoleman.com,
                 Datos de usuario:
