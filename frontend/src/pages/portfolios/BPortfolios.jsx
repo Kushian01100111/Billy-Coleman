@@ -9,49 +9,49 @@ const BPortfolios = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const {activeNav} = useOutletContext()
   const slides =[
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/GQST__Collections-2_fqhpim.jpg",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537381/Beauty/Imgs/1_fvf8i7.jpg",
+      alt:"Beauty"
     },
-
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/HERO_19_Nagi-Taryn-2_ezgbbx.jpg",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537384/Beauty/Imgs/2_mt2snd.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/080-101_ZOO_63_SHOOTS_NAGI_SAKAI_WERNER_MASA-3ba_tt3i9q.jp g",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537397/Beauty/Imgs/3_1_nhwcl4.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/HERO_19_Nagi-Taryn-2a_wpdnua.jpg",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537382/Beauty/Imgs/4_czh918.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/080-101_ZOO_63_SHOOTS_NAGI_SAKAI_WERNER_MASA-3a_cfi6n5.jpg",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537524/Beauty/Imgs/5_kerjuw.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/HERO_19_Nagi-Taryn-4_abnyxm.jpg",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537384/Beauty/Imgs/6_jqnyej.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448582/Billy%20Examples/Men/080-101_ZOO_63_SHOOTS_NAGI_SAKAI_WERNER_MASA-2b_ni6x4j.jpg",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537387/Beauty/Imgs/7_tjjms1.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448583/Billy%20Examples/Men/080-101_ZOO_63_SHOOTS_NAGI_SAKAI_WERNER_MASA-2a_eyjape.jpg",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537380/Beauty/Imgs/8_zl9bbf.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448585/Billy%20Examples/Men/Screen_Shot_2022-11-21_at_1.27.56_PMB_bpen2r.png",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537386/Beauty/Imgs/9_qpemdg.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448585/Billy%20Examples/Men/Screen_Shot_2022-11-21_at_1.27.56_PMA_n2ffyx.png",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537382/Beauty/Imgs/10_xizhkk.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448587/Billy%20Examples/Men/Screen_Shot_2022-09-25_at_2.11.58_PM_tnt7rd.png",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537387/Beauty/Imgs/11_zf3pla.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448587/Billy%20Examples/Men/Screen_Shot_2022-09-25_at_2.12.10_PM_aruvzl.png",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537380/Beauty/Imgs/12_fpa83p.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448589/Billy%20Examples/Men/Screen_Shot_2022-09-25_at_2.12.18_PM_syrnq6.png",
-      alt:"Men"
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537380/Beauty/Imgs/13_euug9i.jpg",
+      alt:"Beauty"
     },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/v1673448590/Billy%20Examples/Men/Screen_Shot_2022-11-21_at_1.28.54_PM_yezabs.png",
-      alt:"Men"
-    },];
+    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537388/Beauty/Imgs/BCFinal1239_sl57wl.jpg",
+      alt:"Beauty"
+    }
+    ];
     function handleWindowSizeChange() {
       setWidth(window.innerWidth);
   }
