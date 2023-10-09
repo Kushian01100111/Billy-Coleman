@@ -47,9 +47,6 @@ const BPortfolios = () => {
     },
     { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537380/Beauty/Imgs/13_euug9i.jpg",
       alt:"Beauty"
-    },
-    { url:"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1696537388/Beauty/Imgs/BCFinal1239_sl57wl.jpg",
-      alt:"Beauty"
     }
     ];
     function handleWindowSizeChange() {
