@@ -22,7 +22,8 @@ app.use(cors({
     credentials: true
 }));
 
-// Body Parsing
+// Body Parsing 
+
 app.use(Express.urlencoded({ extended: true }));
 app.use(Express.json());
 
